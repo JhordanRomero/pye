@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPYEE - Carta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-arena: #F4F1EA;
+            --color-azul-oscuro: #0A2463;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-arena);
+            color: var(--color-azul-oscuro);
+        }
+    </style>
+</head>
+<body class="p-6 md:p-8">
+
+    <header class="absolute top-6 left-6 md:top-8 md:left-8">
+        <a href="index.html" title="Volver al inicio">
+            <img src="https://i.imgur.com/qwg2KH0.png" alt="Logo LPYEE" class="h-8 md:h-10">
+        </a>
+    </header>
+
+    <!-- Navegación optimizada para móvil y desktop -->
+    <nav class="absolute top-6 right-6 md:top-8 md:right-16 text-right text-sm md:text-md">
+        <button id="btn-menu" class="block uppercase tracking-widest font-light hover:underline transition-opacity duration-300">Menú</button>
+        <button id="btn-bebestibles" class="block uppercase tracking-widest font-light hover:underline transition-opacity duration-300 opacity-50 mt-2">Bebestibles</button>
+    </nav>
+
+    <!-- Contenido principal con padding superior responsivo -->
+    <div class="w-full max-w-xl mx-auto pt-24 md:pt-32 pb-8">
+        <main>
+            <section id="menu">
+                <!-- Espaciado ajustado para móvil -->
+                <div class="space-y-6 md:space-y-8">
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm md:text-base font-semibold uppercase">Pulpo a la parrilla</h3>
+                            <span class="text-sm md:text-base font-light">$19.990</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-light mt-1 text-[var(--color-azul-oscuro)]/70 leading-relaxed">
+                            Pulpo asado en brasas, con papas al rescoldo, pebre de cebolla, ají verde y cilantro. Sabor ahumado, picante y terroso.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm md:text-base font-semibold uppercase">Cancato de jurel</h3>
+                            <span class="text-sm md:text-base font-light">$17.990</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-light mt-1 text-[var(--color-azul-oscuro)]/70 leading-relaxed">
+                            Jurel al horno con longaniza, tomate, queso, ajo y orégano, acompañado de pan amasado. Sabor graso, ácido y salado.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm md:text-base font-semibold uppercase">Cazuela de mariscos</h3>
+                            <span class="text-sm md:text-base font-light">$18.990</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-light mt-1 text-[var(--color-azul-oscuro)]/70 leading-relaxed">
+                            Choritos, piure y pescado en caldo con zapallo, papas, arroz, cebolla y perejil. Sabor salino, dulce y fresco.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm md:text-base font-semibold uppercase">Pancoras en caldereta</h3>
+                            <span class="text-sm md:text-base font-light">$21.990</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-light mt-1 text-[var(--color-azul-oscuro)]/70 leading-relaxed">
+                            Pancoras de río y mar en caldo de cebolla, ajo, zanahoria, papas y laurel. Sabor salino, dulce y terroso.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm md:text-base font-semibold uppercase">Erizos con papas</h3>
+                            <span class="text-sm md:text-base font-light">$20.990</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-light mt-1 text-[var(--color-azul-oscuro)]/70 leading-relaxed">
+                            Lenguas de erizo servidas sobre papas cocidas, aliñadas con ajo, aceite, merkén y perejil. Sabor graso, ácido y ahumado.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm md:text-base font-semibold uppercase">Reineta a la plancha</h3>
+                            <span class="text-sm md:text-base font-light">$16.990</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-light mt-1 text-[var(--color-azul-oscuro)]/70 leading-relaxed">
+                            Reineta sellada en plancha con charquicán de zapallo, papas, cochayuyo, cebolla y orégano. Sabor salino, vegetal y fresco.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bebestibles" class="hidden">
+                 <!-- Espaciado ajustado para móvil -->
+                <div class="space-y-6 md:space-y-8">
+                    <div>
+                        <h3 class="text-sm md:text-base font-semibold uppercase mb-3 md:mb-4">Gaseosas y Aguas</h3>
+                        <div class="space-y-2 text-sm md:text-base font-light text-[var(--color-azul-oscuro)]/80">
+                            <div class="flex justify-between"><p>Coca-Cola Original</p><span>$2.500</span></div>
+                            <div class="flex justify-between"><p>Coca-Cola Sin Azúcar</p><span>$2.500</span></div>
+                            <div class="flex justify-between"><p>Sprite</p><span>$2.500</span></div>
+                            <div class="flex justify-between"><p>Agua Mineral con Gas</p><span>$2.000</span></div>
+                            <div class="flex justify-between"><p>Agua Mineral sin Gas</p><span>$2.000</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm md:text-base font-semibold uppercase mb-3 md:mb-4">Vinos</h3>
+                        <div class="space-y-2 text-sm md:text-base font-light text-[var(--color-azul-oscuro)]/80">
+                            <div class="flex justify-between"><p>Copa Sauvignon Blanc (Casa)</p><span>$5.000</span></div>
+                            <div class="flex justify-between"><p>Botella Sauvignon Blanc Reserva</p><span>$18.000</span></div>
+                            <div class="flex justify-between"><p>Copa Carmenere (Casa)</p><span>$5.500</span></div>
+                            <div class="flex justify-between"><p>Botella Carmenere Gran Reserva</p><span>$24.000</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm md:text-base font-semibold uppercase mb-3 md:mb-4">Coctelería</h3>
+                        <div class="space-y-2 text-sm md:text-base font-light text-[var(--color-azul-oscuro)]/80">
+                            <div class="flex justify-between"><p>Pisco Sour Peruano</p><span>$7.000</span></div>
+                            <div class="flex justify-between"><p>Mojito Clásico</p><span>$6.500</span></div>
+                            <div class="flex justify-between"><p>Aperol Spritz</p><span>$8.000</span></div>
+                            <div class="flex justify-between"><p>Gin & Tonic (Hendrick's)</p><span>$9.500</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const btnBebestibles = document.getElementById('btn-bebestibles');
+        const menuSection = document.getElementById('menu');
+        const bebestiblesSection = document.getElementById('bebestibles');
+
+        function showMenu() {
+            menuSection.classList.remove('hidden');
+            bebestiblesSection.classList.add('hidden');
+            
+            btnMenu.classList.remove('opacity-50');
+            btnBebestibles.classList.add('opacity-50');
+        }
+
+        function showBebestibles() {
+            bebestiblesSection.classList.remove('hidden');
+            menuSection.classList.add('hidden');
+
+            btnBebestibles.classList.remove('opacity-50');
+            btnMenu.classList.add('opacity-50');
+        }
+
+        btnMenu.addEventListener('click', showMenu);
+        btnBebestibles.addEventListener('click', showBebestibles);
+    </script>
+
+</body>
+</html>
